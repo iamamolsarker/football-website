@@ -37,9 +37,18 @@ body {
   margin-top: 20px;
   display: inline-block;
 }
+.main-btn:hover i {
+  padding-left: 30px;
+  transition-property: padding;
+  transition-duration: 1s;
+}
 .banner-img,
 .highlight-img {
   width: 100%;
+}
+.banner-img:hover {
+  transform: rotate(50deg);
+  transition-duration: 1s;
 }
 
 /* Player section styles here */
@@ -164,4 +173,27 @@ body {
 .date {
   color: #fff;
   text-align: center;
+}
+
+/* footer styles start from here */
+footer {
+  margin: 80px 0 40px;
+}
+.logo {
+  width: 450px;
+  margin: 0 auto;
+  display: block;
+}
+.social-icons {
+  text-align: center;
+}
+.social-icons i {
+  color: #969bab;
+  font-size: 25px;
+  letter-spacing: 10px;
+  cursor: pointer;
+}
+.copyright {
+  text-align: center;
+  padding: 10px;
 }
