@@ -85,34 +85,83 @@ body {
 }
 
 /* Scores section styles here */
-.scores{
+.scores {
   margin: 70px 0;
 }
-.score{
+.score {
   padding: 25px;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.25);
   margin: 0 15px;
   border-radius: 15px;
 }
 .day-date,
-.team-name{
+.team-name {
   color: #181818;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 1.5px;
 }
-.score-div{
+.score-div {
   margin: 0 20px;
 }
-.team-logo{
+.team-logo {
   width: 100px;
   height: auto;
   margin: 0 15px;
 }
-.goals{
+.goals {
   color: #181818;
   font-size: 65px;
   margin: 0 15px;
   text-align: center;
 }
 
+/* upcoming match styles here */
+.additional-heading {
+  font-size: 40px;
+  text-align: center;
+  color: #181818;
+  margin-bottom: 20px;
+}
+.match-1 {
+  background-image: url(images/match-1.png);
+}
+.match-2 {
+  background-image: url(images/match-2.png);
+}
+.match-3 {
+  background-image: url(images/match-3.png);
+}
+.matches {
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.matches::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+.match-details {
+  position: relative;
+  top: 270px;
+  z-index: 2;
+}
+.match-name {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.date {
+  color: #fff;
+  text-align: center;
+}
